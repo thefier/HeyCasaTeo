@@ -1,0 +1,24 @@
+{
+  "type": "micro",
+  "wake_word": "Ok Casa Teo",
+  "author": "Fernando Villarroel",
+  "website": "https://eonminerals.com",
+  "model": "okay_kasa_Teo.tflite",
+  "trained_languages": [
+    "es"
+  ],
+  "version": 2,
+  "micro": {
+    "probability_cutoff": 0.95,
+    "feature_step_size": 10,
+    "sliding_window_size": 5,
+    "tensor_arena_size": 24000,
+    "minimum_esphome_version": "2024.7.0"
+  },
+  "meta": {
+    "model_file_size_bytes": 206964,
+    "model_sha256": "c5c233502429d5c7163848ab45d3dccc8310ea3cfb6597c7107dbca57ef6596c",
+    "generated_at_utc": "2025-07-19T12:11:32.967868Z",
+    "notes": "Reemplaza tensor_arena_size con el valor medido (arena_used_bytes * 1.05-1.10). Ajusta probability_cutoff tras pruebas."
+  }
+}
